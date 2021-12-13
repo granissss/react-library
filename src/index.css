@@ -228,14 +228,14 @@ LANDING
 }
 
 header {
-  height: 150vh;
+  height: 100vh;
 }
 
 .header__container {
   width: 100%;
   max-width: 720px;
-  margin: 0 auto;
-  height: 100%;
+  margin: 184px auto;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -245,10 +245,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 64;
 }
 
 .header__img--wrapper {
-  padding: 58px;
+  padding: 64px;
   z-index: 50;
 }
 
@@ -761,6 +762,8 @@ select {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
+
+
   .header__description {
     padding: 0 24px;
   }
@@ -796,6 +799,8 @@ select {
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
+
+
   .btn__menu {
     display: block;
   }
