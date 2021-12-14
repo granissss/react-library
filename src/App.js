@@ -1,14 +1,17 @@
 import Nav from "./components/Nav";
 import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
 import { books } from "./data";
 import Bookinfo from "./pages/BookInfo";
 import Cart from "./pages/Cart";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+
+
   const [cart, setCart] = useState([]);
 
   function addToCart(book) {
@@ -41,9 +44,11 @@ function App() {
   }
 
   useEffect(() => {}, [cart]);
+  
 
   return (
     <Router>
+      <ScrollToTop>
       <div className="App">
         <Nav numberOfItems={numberOfItems()} />
         <Route path="/" exact component={Home} />
@@ -67,6 +72,7 @@ function App() {
         />
         <Footer />
       </div>
+      </ScrollToTop>
     </Router>
   );
 }

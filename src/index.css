@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -228,14 +229,14 @@ LANDING
 }
 
 header {
-  height: 100vh;
+  height: calc(100vh + 150px);
 }
 
 .header__container {
   width: 100%;
   max-width: 720px;
   margin: 184px auto;
-  height: 80%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -249,7 +250,9 @@ header {
 }
 
 .header__img--wrapper {
-  padding: 64px;
+  padding: 54px;
+  margin: 0 auto;
+  width: 100%;
   z-index: 50;
 }
 
