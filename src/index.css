@@ -771,6 +771,10 @@ select {
     padding: 0 24px;
   }
 
+  .header__container {
+    margin: 24px auto;
+  }
+
   h1 {
     font-size: 40px;
   }
